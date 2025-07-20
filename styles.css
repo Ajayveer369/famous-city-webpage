@@ -1,0 +1,224 @@
+/* ---------------------- ROOT + BODY ---------------------- */
+/* Root element: using font shorthand with all 6 properties */
+html {
+  font: italic small-caps bold 20px/1.5 "Segoe UI", sans-serif;
+  background-color: #f2f2f2; /* Light background for overall site */
+}
+
+/* Body layout: max-width, padding, centered, border, background */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.5rem solid #ccc;
+  background-color: #ffffff;
+}
+
+/* ---------------------- PAGE LAYOUT ---------------------- */
+/* Float layout*/
+main, aside {
+  padding: 1.5rem;
+}
+
+/* Main content float left - 70% */
+main {
+  float: left;
+  width: 70%;
+}
+
+/* Aside float right - 30% */
+aside {
+  float: right;
+  width: 30%;
+}
+
+/* Footer clear fix */
+footer {
+  clear: both;
+}
+
+/* ---------------------- HEADER + FOOTER ---------------------- */
+header, footer {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* gradient */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header {
+  font-size: 2rem;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+/* ---------------------- SECTION HEADING ---------------------- */
+section h2 {
+  color: #333;
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  text-align: left;
+}
+
+/* ---------------------- BLOCKQUOTE ---------------------- */
+blockquote {
+  font-style: italic;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 0.5rem solid #ccc;
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------- FIGURE + IMAGE ---------------------- */
+figure {
+  border: 0.2rem solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0.3rem solid #aaa;
+  border-radius: 0.8rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-variant: small-caps;
+}
+
+/* ---------------------- IFRAME ---------------------- */
+iframe {
+  display: block;
+  border: 0.3rem solid #444;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+/* ---------------------- QUOTE SECTION ---------------------- */
+section.quote {
+  border: 0.4rem solid #999;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  width: 70%;
+  font-family: "Palatino", serif;
+  font-style: italic;
+  color: #222;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+/* ---------------------- LISTS + LINKS ---------------------- */
+/* Type selector: remove underline and add it back on hover */
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:visited {
+  color: #800080;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+a:active {
+  color: #cc0000;
+}
+
+/* ul styling: remove bullets and padding */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ---------------------- TABLE ---------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #fff;
+  background-color: #333;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  border: 0.2rem solid #ccc;
+}
+
+/* nth-child for alternating colors and hover effect */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* ---------------------- FORM ---------------------- */
+.form-label {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-control {
+  padding: 0.7rem;
+  border: 0.2rem solid #888;
+  border-radius: 0.5rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------- RESPONSIVE DESIGN ---------------------- */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  main, aside {
+    float: none;
+    width: 100%;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  figure img {
+    width: 100%;
+  }
+
+  section.quote {
+    width: 90%;
+  }
+
+  blockquote {
+    width: 90%;
+  }
+}
